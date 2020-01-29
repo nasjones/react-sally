@@ -21,15 +21,7 @@
     <script type="text/babel">
         function App(props) {
             return (
-                props.children
-            );
-        }
-
-        ReactDOM.render(
-            <App className='my-class'>
-                <header>
-                    <h1 className="name">Sally Student</h1>
-                </header>
+                props.children +
                 <main>
                     <h2>Education:</h2>
                     <ul>
@@ -67,7 +59,13 @@
                     </footer>
 
                 </main>
-            </App >,
+            );
+        }
+
+        ReactDOM.render(
+            <App> <header>
+                <h1 className="name">Sally Student</h1>
+            </header></App>,
             document.querySelector('#root')
         );
 
